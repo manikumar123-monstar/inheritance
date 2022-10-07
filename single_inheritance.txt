@@ -1,0 +1,21 @@
+class parent {
+	void fall() {
+	int a=10,b=20,c;
+	c=a*b;
+	System.out.println("c value "+c);
+	System.out.println("i am perent class of multilevel_inheritance"); } }
+	class intermediate extends parent{
+		void top() {
+			int m=20,n=4,v;
+			v=m-n;
+			System.out.println("v value "+v);
+			System.out.println("i am intermediate of multilevel_inheritance"); }  }
+public class Multilevel_inheritance  extends intermediate{
+	void half() {
+		System.out.println("i am child class method");}
+	public static void main(String[] args) {
+		Multilevel_inheritance m=new Multilevel_inheritance();
+		  m.fall();
+		  m.half();
+		  m.top();  } }
+	
